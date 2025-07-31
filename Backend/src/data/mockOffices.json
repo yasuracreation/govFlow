@@ -1,0 +1,5 @@
+[
+  { "id": "1", "name": "Colombo District Office", "address": "123 Main St, Colombo", "isActive": true },
+  { "id": "2", "name": "Gampaha District Office", "address": "456 Second St, Gampaha", "isActive": true },
+  { "id": "3", "name": "Kandy District Office", "address": "789 Third St, Kandy", "isActive": false }
+] 

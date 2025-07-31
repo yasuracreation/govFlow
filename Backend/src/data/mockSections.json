@@ -1,0 +1,5 @@
+[
+  { "id": 1, "name": "Section A", "officeId": 1, "description": "Handles general administration." },
+  { "id": 2, "name": "Section B", "officeId": 1, "description": "Responsible for finance and accounts." },
+  { "id": 3, "name": "Section C", "officeId": 2, "description": "Manages HR and personnel." }
+] 

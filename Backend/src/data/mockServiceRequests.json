@@ -1,0 +1,5 @@
+[
+  { "id": 1, "subjectId": 1, "userId": 1, "status": "PENDING", "createdAt": "2024-06-01T10:00:00Z" },
+  { "id": 2, "subjectId": 2, "userId": 2, "status": "APPROVED", "createdAt": "2024-06-02T11:00:00Z" },
+  { "id": 3, "subjectId": 3, "userId": 3, "status": "REJECTED", "createdAt": "2024-06-03T12:00:00Z" }
+] 

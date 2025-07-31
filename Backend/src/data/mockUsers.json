@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "name": "Admin User",
+    "role": "admin",
+    "email": "admin@govflow.local",
+    "password": "adminpass"
+  },
+  {
+    "id": "2",
+    "name": "Front Desk Officer",
+    "role": "front_desk",
+    "email": "frontdesk@govflow.local",
+    "password": "frontdeskpass"
+  },
+  {
+    "id": "3",
+    "name": "Section Head",
+    "role": "section_head",
+    "email": "sectionhead@govflow.local",
+    "password": "sectionheadpass"
+  }
+] 

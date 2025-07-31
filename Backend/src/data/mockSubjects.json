@@ -1,0 +1,5 @@
+[
+  { "id": 1, "name": "Birth Certificate", "sectionId": 1, "description": "Issuance of birth certificates." },
+  { "id": 2, "name": "Death Certificate", "sectionId": 1, "description": "Issuance of death certificates." },
+  { "id": 3, "name": "Marriage Registration", "sectionId": 2, "description": "Registration of marriages." }
+] 

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "1",
+    "userId": "1",
+    "title": "New Task Assigned",
+    "message": "You have been assigned a new task.",
+    "read": false,
+    "createdAt": "2024-06-27T09:00:00Z"
+  },
+  {
+    "id": "2",
+    "userId": "2",
+    "title": "Document Approved",
+    "message": "Your document has been approved.",
+    "read": true,
+    "createdAt": "2024-06-27T10:00:00Z"
+  }
+] 

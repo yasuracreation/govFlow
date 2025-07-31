@@ -1,0 +1,5 @@
+[
+  { "id": 1, "name": "Birth Certificate Workflow", "description": "Workflow for issuing birth certificates.", "steps": ["Submission", "Verification", "Approval", "Issuance"] },
+  { "id": 2, "name": "Death Certificate Workflow", "description": "Workflow for issuing death certificates.", "steps": ["Submission", "Verification", "Approval", "Issuance"] },
+  { "id": 3, "name": "Marriage Registration Workflow", "description": "Workflow for marriage registration.", "steps": ["Submission", "Verification", "Approval", "Registration"] }
+] 

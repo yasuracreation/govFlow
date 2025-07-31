@@ -1,0 +1,17 @@
+[
+  {
+    "id": "t1",
+    "name": "Business Registration Certificate",
+    "description": "Certificate template for business registration requests.",
+    "content": "<h1>Business Registration Certificate</h1><p>This certifies that {{customerName}} has registered a business on {{requestDate}}.</p>",
+    "variables": [
+      { "id": "v1", "name": "customerName", "type": "text", "description": "Customer Full Name", "required": true },
+      { "id": "v2", "name": "requestDate", "type": "date", "description": "Request Date", "required": true }
+    ],
+    "fileType": "pdf",
+    "version": "1.0",
+    "createdAt": "2024-06-27T00:00:00Z",
+    "updatedAt": "2024-06-27T00:00:00Z",
+    "isActive": true
+  }
+] 
