@@ -1,16 +1,17 @@
 import { Router } from 'express';
 import { sectionController } from '../controllers/section.controller';
-import { authenticateJWT, authorizeRoles } from '../middlewares/auth.middleware';
+import { authMiddleware } from '../middlewares/auth.middleware';
 
 const router = Router();
 
-router.use(authenticateJWT);
-
+// Public GET (or use authMiddleware for all roles if needed)
 router.get('/', sectionController.getAll);
 router.get('/:id', sectionController.getById);
-router.post('/', authorizeRoles('ADMIN'), sectionController.create);
-router.put('/:id', authorizeRoles('ADMIN'), sectionController.update);
-router.delete('/:id', authorizeRoles('ADMIN'), sectionController.delete);
+
+// Admin-only
+router.post('/', authMiddleware(['ADMIN']), sectionController.create);
+router.put('/:id', authMiddleware(['ADMIN']), sectionController.update);
+router.delete('/:id', authMiddleware(['ADMIN']), sectionController.delete);
 
 /**
  * @swagger

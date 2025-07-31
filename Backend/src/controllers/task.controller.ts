@@ -4,6 +4,11 @@ import { toTaskVM } from '../mappers/task.mapper';
 
 export const taskController = {
   getAll: (req: Request, res: Response) => {
+    const userId = req.query.userId as string | undefined;
+    if (userId) {
+      const tasks = taskService.getByUserId(Number(userId)).map(toTaskVM);
+      return res.json(tasks);
+    }
     const tasks = taskService.getAll().map(toTaskVM);
     res.json(tasks);
   },

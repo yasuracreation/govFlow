@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GovFlow</title>
+    
+    <style>
+        /* Basic skeleton loader animation */
+        .skeleton-loader {
+            background-color: #e2e8f0; /* bg-gray-300 */
+            border-radius: 0.25rem; /* rounded */
+            position: relative;
+            overflow: hidden;
+            opacity: 0.7;
+        }
+        .skeleton-loader::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -150%; /* Start off-screen */
+            height: 100%;
+            width: 150%; /* Make it wide enough to sweep across */
+            background: linear-gradient(to right, transparent 0%, #edf2f7 50%, transparent 100%); /* bg-gray-200 for shine */
+            animation: skeleton-loading 1.5s infinite linear;
+        }
+        @keyframes skeleton-loading {
+            0% {
+                left: -150%;
+            }
+            100% {
+                left: 100%;
+            }
+        }
+        /* Ensure root takes full height for some layouts */
+        html, body, #root {
+            height: 100%;
+        }
+    </style>
+
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@19.0.0",
+    "react-dom/": "https://esm.sh/react-dom@19.0.0/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^6.24.1",
+    "lucide-react": "https://esm.sh/lucide-react@^0.523.0",
+    "react/": "https://esm.sh/react@^19.1.0/"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-Co4ujHNy.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-YoBjFhlH.css">
+</head>
+<body class="bg-gray-100">
+    <div id="root"></div>
+</body>
+</html>

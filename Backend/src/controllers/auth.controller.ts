@@ -91,8 +91,12 @@ export class AuthController {
    *         description: Invalid credentials
    */
   static login(req: Request, res: Response) {
-    const { email, password } = req.body;
-    const user = (users as any[]).find(u => u.email === email && u.password === password);
+    // Accept identifier (can be email, employeeId, or name) and password
+    const { identifier, password } = req.body;
+    const user = (users as any[]).find(u =>
+      (u.email === identifier || u.employeeId === identifier || u.name === identifier) &&
+      u.password === password
+    );
     if (!user) return res.status(401).json({ error: 'Invalid credentials' });
     const token = signToken({ id: user.id, role: user.role, email: user.email });
     res.json({ token });
@@ -120,11 +124,21 @@ export class AuthController {
    *                   type: string
    *                 role:
    *                   type: string
+   *                 name:
+   *                   type: string
    *       401:
    *         description: Unauthorized
    */
   static me(req: Request, res: Response) {
-    res.json((req as any).user);
+    const jwtUser = (req as any).user;
+    // Find the complete user data from mock users
+    const user = (users as any[]).find(u => u.id === jwtUser.id);
+    if (!user) {
+      return res.status(404).json({ error: 'User not found' });
+    }
+    // Return complete user data (excluding password)
+    const { password, ...userData } = user;
+    res.json(userData);
   }
 
   /**

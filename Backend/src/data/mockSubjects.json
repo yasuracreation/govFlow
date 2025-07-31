@@ -1,5 +1,21 @@
 [
   { "id": 1, "name": "Birth Certificate", "sectionId": 1, "description": "Issuance of birth certificates." },
   { "id": 2, "name": "Death Certificate", "sectionId": 1, "description": "Issuance of death certificates." },
-  { "id": 3, "name": "Marriage Registration", "sectionId": 2, "description": "Registration of marriages." }
+  { "id": 3, "name": "Marriage Registration", "sectionId": 2, "description": "Registration of marriages." },
+  { "id": 4, "name": "Business Registration (Individual/Partnership)", "sectionId": 2, "description": "Improved workflow for business name registration in Kundosale Divisional Secretariat." },
+  { "id": 5, "name": "Scholarship Application Recommendation", "sectionId": 2, "description": "Workflow for recommending scholarship applications." },
+  { "id": 6, "name": "Income Certificate Issuance", "sectionId": 2, "description": "Workflow for issuing income certificates." },
+  { "id": 7, "name": "Elders' ID & Allowance Processing", "sectionId": 2, "description": "Workflow for providing elders' ID cards and paying elders' allowances." },
+  { "id": 8, "name": "Timber Transport Permit Issuance", "sectionId": 2, "description": "Workflow for issuing timber transport permits, including alternative flows for special cases." },
+  { "id": 9, "name": "Timber Business Registration Recommendation", "sectionId": 2, "description": "Workflow for recommending timber business registration." },
+  { "id": 10, "name": "Timber Felling Permit Issuance", "sectionId": 2, "description": "Improved workflow for issuing timber felling permits." },
+  { "id": 11, "name": "Sand/Earth/Gravel Mining & Transport Permit (Non-Commercial)", "sectionId": 2, "description": "Workflow for issuing mining and transport permits for non-commercial purposes." },
+  { "id": 12, "name": "Mineral Mining Recommendation", "sectionId": 2, "description": "Workflow for recommending sand, metal, earth, and other mineral mining." },
+  { "id": 13, "name": "Explosives Permit Recommendation", "sectionId": 2, "description": "Workflow for recommending explosives permits." },
+  { "id": 14, "name": "Firearm Permit Recommendation", "sectionId": 2, "description": "Workflow for recommending firearm permits." },
+  { "id": 15, "name": "Animal Transport Permit Issuance", "sectionId": 2, "description": "Workflow for issuing animal transport permits." },
+  { "id": 16, "name": "Gram Niladhari Counter-signing", "sectionId": 2, "description": "Workflow for Gram Niladhari counter-signing process." },
+  { "id": 17, "name": "New Liquor Permit Issuance", "sectionId": 2, "description": "Workflow for issuing new liquor permits." },
+  { "id": 18, "name": "Annual Liquor Permit Renewal", "sectionId": 2, "description": "Workflow for annual renewal of liquor permits." },
+  { "id": 19, "name": "Nutrition Allowance Issuance", "sectionId": 2, "description": "Workflow for issuing nutrition allowances." }
 ] 

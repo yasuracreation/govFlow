@@ -6,6 +6,7 @@ export interface User {
   role: string;
   email: string;
   password?: string;
+  subjectIds?: string[];
 }
 
 export function toUserVM(user: User): UserVM {

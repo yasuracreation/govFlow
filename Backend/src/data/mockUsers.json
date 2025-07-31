@@ -1,23 +1,72 @@
 [
   {
-    "id": "1",
+    "id": "user1",
+    "name": "Kamal Silva",
+    "role": "FRONT_DESK",
+    "email": "kamal.silva@govflow.local",
+    "password": "password123",
+    "nic": "123456789V",
+    "employeeId": "FD001",
+    "officeId": "office1"
+  },
+  {
+    "id": "user2",
+    "name": "Nimala Perera",
+    "role": "OFFICER",
+    "email": "nimala.perera@govflow.local",
+    "password": "password123",
+    "nic": "987654321V",
+    "employeeId": "OF001",
+    "officeId": "office1"
+  },
+  {
+    "id": "user3",
+    "name": "Sunil Bandara",
+    "role": "SECTION_HEAD",
+    "email": "sunil.bandara@govflow.local",
+    "password": "password123",
+    "nic": "111222333V",
+    "employeeId": "SH001",
+    "officeId": "office1"
+  },
+  {
+    "id": "user4",
+    "name": "Geetha Kumari",
+    "role": "DEPARTMENT_HEAD",
+    "email": "geetha.kumari@govflow.local",
+    "password": "password123",
+    "nic": "444555666V",
+    "employeeId": "DH001",
+    "officeId": "office8",
+    "subjectIds": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19"]
+  },
+  {
+    "id": "user5",
     "name": "Admin User",
-    "role": "admin",
+    "role": "ADMIN",
     "email": "admin@govflow.local",
-    "password": "adminpass"
+    "password": "password123",
+    "nic": "777888999V",
+    "employeeId": "ADM001"
   },
   {
-    "id": "2",
-    "name": "Front Desk Officer",
-    "role": "front_desk",
-    "email": "frontdesk@govflow.local",
-    "password": "frontdeskpass"
+    "id": "user6",
+    "name": "Ravi Fernando",
+    "role": "OFFICER",
+    "email": "ravi.fernando@govflow.local",
+    "password": "password123",
+    "nic": "222333444V",
+    "employeeId": "OF002",
+    "officeId": "office2"
   },
   {
-    "id": "3",
-    "name": "Section Head",
-    "role": "section_head",
-    "email": "sectionhead@govflow.local",
-    "password": "sectionheadpass"
+    "id": "user7",
+    "name": "Saman Jayasinghe",
+    "role": "SECTION_HEAD",
+    "email": "saman.jayasinghe@govflow.local",
+    "password": "password123",
+    "nic": "555666777V",
+    "employeeId": "SH002",
+    "officeId": "office2"
   }
 ] 

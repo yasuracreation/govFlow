@@ -1,0 +1,6 @@
+{
+  "name": "GovFlow",
+  "description": "A React web application for managing government service requests and workflows, featuring role-based access control and dynamic task processing.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}

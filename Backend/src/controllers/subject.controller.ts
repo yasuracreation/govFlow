@@ -1,9 +1,25 @@
 import { Request, Response } from 'express';
 import { subjectService } from '../services/subject.service';
 import { toSubjectVM } from '../mappers/subject.mapper';
+import { UserService } from '../services/user.service';
+
+const userService = new UserService();
 
 export const subjectController = {
   getAll: (req: Request, res: Response) => {
+    const userId = req.query.userId as string | undefined;
+    if (userId) {
+      const user = userService.getById(userId);
+      if (user && user.subjectIds) {
+        const allSubjects = subjectService.getAll();
+        const userSubjects = allSubjects.filter(subject =>
+          Array.isArray(user.subjectIds) && user.subjectIds.includes(subject.id.toString())
+        );
+        return res.json(userSubjects.map(toSubjectVM));
+      }
+      return res.json([]); // Return empty array if user or subjects not found
+    }
+
     const subjects = subjectService.getAll().map(toSubjectVM);
     res.json(subjects);
   },

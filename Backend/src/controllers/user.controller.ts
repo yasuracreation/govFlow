@@ -84,6 +84,20 @@ export const userController = {
     res.json(user);
   },
 
+  update: (req: Request, res: Response) => {
+    const { id } = req.params;
+    const user = (users as any[]).find(u => u.id === id);
+    if (!user) return res.status(404).json({ error: 'User not found' });
+    // Update allowed fields
+    const allowedFields = ['name', 'email', 'officeId', 'officeName', 'subjectIds', 'nic', 'employeeId', 'role', 'status', 'lastLogin'];
+    for (const key of allowedFields) {
+      if (req.body[key] !== undefined) {
+        user[key] = req.body[key];
+      }
+    }
+    res.json(user);
+  },
+
   /**
    * @swagger
    * /api/users/{id}/role:
@@ -131,4 +145,4 @@ export const userController = {
     user.subject = subject;
     res.json({ message: 'User role/subject updated', user });
   },
-}; 
+};
